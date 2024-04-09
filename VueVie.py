@@ -10,12 +10,16 @@ class VueVie(tk.Tk):
         self.__canvas = tk.Canvas(self, width=col*20, height=lig*20, bg='white')
         self.__button_next = tk.Button(self, text='Étape suivante', command=self.__etape)
         self.__button_next_auto = tk.Button(self, text='Démarrer', command=self.__demarrer)
+        self.__button_clear = tk.Button(self, text='Effacer', command=self.__jeu.clear)
+        self.__button_reset = tk.Button(self, text='Réinitialiser', command=self.__jeu.reset)
         self.__canvas.pack()
         self.__dessiner()
         self.bind('<Button-1>', self.__clic)
         self.bind('<Return>', self.__etape)
         self.__button_next.pack()
         self.__button_next_auto.pack()
+        self.__button_clear.pack()
+        self.__button_reset.pack()
     
     def __dessiner(self):
         self.__canvas.delete('all')
