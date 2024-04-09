@@ -51,3 +51,7 @@ class JeuDeLaVie():
     def reset(self):
         self.__matrice = [[(random.randint(0, 1)) for _ in range(self.__lig)] for _ in range(self.__col)]
         self.__historique = []
+
+    def etape_precedente(self):
+        if self.__historique:
+            self.__matrice = self.__historique.pop()
