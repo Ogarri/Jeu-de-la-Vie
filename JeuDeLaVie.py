@@ -43,3 +43,11 @@ class JeuDeLaVie():
                     if self.nb_voisines_vivantes(i, j) == 3:
                         new_matrice[i][j] = 1
         self.__matrice = new_matrice
+    
+    def clear(self):
+        self.__matrice = [[0 for _ in range(self.__lig)] for _ in range(self.__col)]
+        self.__historique = []
+    
+    def reset(self):
+        self.__matrice = [[(random.randint(0, 1)) for _ in range(self.__lig)] for _ in range(self.__col)]
+        self.__historique = []
