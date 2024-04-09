@@ -18,8 +18,8 @@ Présentation :
 
 Utilisation :
 
-  Avoir Python d'installé sur sa machine
-  Exécuter MainVie.py
+  Avoir Python d'installé sur sa machine.
+  Exécuter MainVie.py.
   Un affichage random est présent de base : les cellules noires sont les cellules vivantes.
   Vous pouvez cliquer sur les cellules pour les changer.
   Deux boutons a votre disposition :
